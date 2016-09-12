@@ -17,7 +17,7 @@
             <tr>
                 <td><a href="{{ path('cms_user_show', { 'id': user.id }) }}">{{ user.id }}</a></td>
                 <td>{{ user.username }}</td>
-                <td>{{ user.password }}</td>
+                <td>{{ user.password|slice(0,20) }}</td>
                 <td>
                     <ul>
                         <li>
