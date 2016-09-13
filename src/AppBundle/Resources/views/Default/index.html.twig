@@ -1,7 +1,14 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-	<h1>Custom CMS Home Page</h1>
+	{% for page in pages %}
+		<div class="page">
+			<h1>{{ page.title }}</h1>
+			<p class="content">{{ page.content|slice(0,25)}} 
+				<a href="{{path('page_display',{id: page.id } )}}">read more</a>
+			</p>
+		</div>
+	{% endfor %}
 {% endblock %}
 
 {% block stylesheets %}

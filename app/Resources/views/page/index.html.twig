@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Page list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Content</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for page in pages %}
+            <tr>
+                <td><a href="{{ path('cms_page_show', { 'id': page.id }) }}">{{ page.id }}</a></td>
+                <td>{{ page.title }}</td>
+                <td>{{ page.content }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('cms_page_show', { 'id': page.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('cms_page_edit', { 'id': page.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('cms_page_new') }}">Create a new entry</a>
+        </li>
+    </ul>
+{% endblock %}

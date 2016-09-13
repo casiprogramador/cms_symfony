@@ -10,10 +10,12 @@
             <file>file:/var/www/cms/src/AppBundle/Resources/views/Default/index.html.twig</file>
             <file>file:/var/www/cms/src/AppBundle/Form/UserType.php</file>
             <file>file:/var/www/cms/app/config/routing.yml</file>
+            <file>file:/var/www/cms/src/AppBundle/Entity/Page.php</file>
             <file>file:/var/www/cms/app/Resources/views/user/new.html.twig</file>
             <file>file:/var/www/cms/app/Resources/views/base.html.twig</file>
             <file>file:/var/www/cms/app/config/security.yml</file>
             <file>file:/var/www/cms/app/Resources/views/security/login.html.twig</file>
+            <file>file:/var/www/cms/src/AppBundle/Entity/Category.php</file>
             <file>file:/var/www/cms/src/AppBundle/Controller/SecurityController.php</file>
             <file>file:/var/www/cms/app/Resources/views/default/index.html.twig</file>
         </group>
