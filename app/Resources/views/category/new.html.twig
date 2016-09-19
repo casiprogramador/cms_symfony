@@ -1,16 +1,23 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Category creation</h1>
+    <h1 class="text-center">Category creation</h1>
 
-    {{ form_start(form) }}
-        {{ form_widget(form) }}
-        <input type="submit" value="Create" />
+    {{ form_start(form, {'attr': {'class': 'form-horizontal'} }) }}
+        <div class="form-group">
+			<label class="col-md-4 control-label">Name</label>
+			<div class="col-md-5">
+			  {{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
+			</div>
+		</div>
+        <div class="form-group">
+			<div class="col-md-offset-5 col-md-1">
+			  <button type="submit" class="btn btn-primary">Create</button>
+			</div>
+			<div class="col-md-3">
+			  <a class="btn btn-default" href="{{ path('cms_category_index') }}" role="button">Back to the list</a>
+			</div>
+		</div>
     {{ form_end(form) }}
 
-    <ul>
-        <li>
-            <a href="{{ path('cms_category_index') }}">Back to the list</a>
-        </li>
-    </ul>
 {% endblock %}

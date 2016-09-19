@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}CMS - Symfony 3!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 		<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
@@ -25,7 +25,10 @@
 					  <li><a href="{{path('cms_page_index')}}">Pages</a></li>
 				  {% endif %}
 				  
-				  {% if is_granted('ROLE_USER') or is_granted('ROLE_ADMIN')%}
+				  
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					{% if is_granted('ROLE_USER') or is_granted('ROLE_ADMIN')%}
 					  <li><a href="{{path('logout')}}">Logout</a></li>
 				  {% endif %}
 				</ul>

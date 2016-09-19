@@ -1,9 +1,20 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Page</h1>
+	<div class="row">
+		<div class="col-md-10">
+			<h1>Page</h1>
+		</div>
+		<div class="col-md-1">
+			<div class="col-md-offset-6 col-md-1">
+			    {{ form_start(delete_form) }}
+					<button type="submit" class="btn btn-danger">Delete</button>
+				{{ form_end(delete_form) }}
+			</div>
+		</div>
+	</div>
 
-    <table>
+    <table class="table table-hover">
         <tbody>
             <tr>
                 <th>Id</th>
@@ -20,17 +31,8 @@
         </tbody>
     </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('cms_page_index') }}">Back to the list</a>
-        </li>
-        <li>
-            <a href="{{ path('cms_page_edit', { 'id': page.id }) }}">Edit</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
+			<a class="btn btn-default" href="{{ path('cms_page_index') }}" role="button">Back to the list</a>
+
+			<a class="btn btn-primary" href="{{ path('cms_page_edit', { 'id': page.id }) }}" role="button">Edit</a>
+
 {% endblock %}
