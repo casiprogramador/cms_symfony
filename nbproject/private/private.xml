@@ -2,6 +2,36 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/var/www/cms/app/Resources/views/user/show.html.twig</file>
+            <file>file:/var/www/cms/app/Resources/views/category/new.html.twig</file>
+            <file>file:/var/www/cms/src/AppBundle/Form/CategoryType.php</file>
+            <file>file:/var/www/cms/app/Resources/views/page/new.html.twig</file>
+            <file>file:/var/www/cms/app/Resources/views/page/edit.html.twig</file>
+            <file>file:/var/www/cms/src/AppBundle/Resources/views/Default/index.html.twig</file>
+            <file>file:/var/www/cms/src/AppBundle/Controller/UserController.php</file>
+            <file>file:/var/www/cms/app/Resources/views/user/index.html.twig</file>
+            <file>file:/var/www/cms/src/AppBundle/Form/UserType.php</file>
+            <file>file:/var/www/cms/src/AppBundle/Entity/Page.php</file>
+            <file>file:/var/www/cms/app/Resources/views/user/new.html.twig</file>
+            <file>file:/var/www/cms/app/Resources/views/user/edit.html.twig</file>
+            <file>file:/var/www/cms/app/Resources/views/security/login.html.twig</file>
+            <file>file:/var/www/cms/src/AppBundle/Resources/views/Default/display.html.twig</file>
+            <file>file:/var/www/cms/app/Resources/views/category/show.html.twig</file>
+            <file>file:/var/www/cms/app/Resources/views/page/show.html.twig</file>
+            <file>file:/var/www/cms/src/AppBundle/Controller/SecurityController.php</file>
+            <file>file:/var/www/cms/app/Resources/views/default/index.html.twig</file>
+            <file>file:/var/www/cms/src/AppBundle/Form/PageType.php</file>
+            <file>file:/var/www/cms/src/AppBundle/Controller/PageController.php</file>
+            <file>file:/var/www/cms/app/Resources/views/category/edit.html.twig</file>
+            <file>file:/var/www/cms/src/AppBundle/Controller/DefaultController.php</file>
+            <file>file:/var/www/cms/web/css/bootstrap.min.css</file>
+            <file>file:/var/www/cms/app/Resources/views/page/index.html.twig</file>
+            <file>file:/var/www/cms/app/Resources/views/base.html.twig</file>
+            <file>file:/var/www/cms/src/AppBundle/Entity/Category.php</file>
+            <file>file:/var/www/cms/src/AppBundle/Repository/PageRepository.php</file>
+            <file>file:/var/www/cms/src/AppBundle/AppBundle.php</file>
+            <file>file:/var/www/cms/app/Resources/views/category/index.html.twig</file>
+        </group>
     </open-files>
 </project-private>
