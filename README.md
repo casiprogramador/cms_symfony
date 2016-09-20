@@ -41,17 +41,13 @@ Generamos las tablas de la base de datos
 ```
 php bin/console doctrine:schema:update --force
 ```
-Generamos las tablas de la base de datos
-```
-php bin/console doctrine:schema:update --force
-```
 Ejecutamos el servidor local
 ```
 php bin/console server:run
 ```
 Video explicativo del sistema
 --------------------------------
-https://www.youtube.com/channel/UCB2EoYLi0XJXEhHgtKrpSYA
+https://www.youtube.com/watch?v=ZobyZ_a_DgI
 
 
 
